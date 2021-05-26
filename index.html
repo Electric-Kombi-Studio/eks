@@ -22,7 +22,7 @@
     <!-- Barra de navegação -->
     <header class="container-fluid header">
       <div class="row">
-        <nav class="navbar navbar-expand-xl navbar-light bg-light navbar fixed-top py-3 navbar-shrink">
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark navbar fixed-top py-3 navbar-shrink">
           <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
               <img class="rounded-circle" id="logo-img" src="img/eks.png">
@@ -33,6 +33,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#jogo">Jogo</a>
+                </li>
                 <li class="nav-item">
                   <a class="nav-link" aria-current="page" href="#demo-jogo">Demo</a>
                 </li>
@@ -45,6 +48,9 @@
                 <li class="nav-item">
                   <a class="nav-link" aria-current="page" href="#turing">Premiados Turing</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#developers">Desenvolvedores</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -54,41 +60,41 @@
     <main class="container main">
       <section class="game-frame">
         <div class="container-fluid py-1 jumbotron" id="jogo">
-          <h1 class="display-5 fw-bold"">Jogo</h1>
+          <h1 class="fw-bold""><span class="inline-brand">EKStudio</span> Minigames</h1>
           <div class="fluid-media">
             <iframe class="embed-responsive-item" src="https://scratch.mit.edu/projects/530713231/embed" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
           </div>
           <p class="col-md-12 fs-3">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle.</p>
-          <button class="btn btn-danger btn-lg" type="button">Ver no YouTube</button>
+          <a href="https://scratch.mit.edu/studios/29695214/" target="_blank" class="btn btn-warning btn-lg">Nosso Scratch Studio</a>
         </div>
       </section>
       <section class="demo-videos">
         <div class="container-fluid py-1 jumbotron" id="demo-jogo">
-          <h1 class="display-5 fw-bold"">Demonstração do Jogo</h1>
+          <h1 class="fw-bold"">Demonstração do Jogo</h1>
           <div class="fluid-media">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_tlUajUvnvg" frameborder="0" allowfullscreen></iframe>
           </div>
           <p class="col-md-12 fs-3">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle.</p>
-          <button class="btn btn-danger btn-lg" type="button">Ver no YouTube</button>
+          <a href="https://www.youtube.com/watch?v=_tlUajUvnvg" target="_blank" button class="btn btn-outline-danger btn-lg">Ver no YouTube</a>
         </div>
         <div class="container-fluid py-1 jumbotron" id="doc-jogo">
-          <h1 class="display-5 fw-bold"">Documentação do Jogo</h1>
+          <h1 class="fw-bold"">Documentação do Jogo</h1>
           <div class="fluid-media">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/K0mYoGmsRrM" frameborder="0" allowfullscreen></iframe>
           </div>
           <p class="col-md-12 fs-3">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle.</p>
-          <button class="btn btn-danger btn-lg" type="button">Ver no YouTube</button>
+          <a href="https://www.youtube.com/watch?v=K0mYoGmsRrM" target="_blank" button class="btn btn-outline-danger btn-lg">Ver no YouTube</a>
         </div>
       </section>
 
       <!-- Seção Nobel -->
-      <section class="container-fluid" id="nobel">
+      <section class="container-fluid" id="nobel" style="margin-top: 60px;">
         <div class="row">
-          <div class="col -lg-6 col-md-12">
+          <div class="col">
             <h1 class="fw-bold">Premiados Nobel</h1>
           </div>
         </div>
-        <div class="row row-cols-md-3 g-4">
+        <div class="row row-cols-1 row-cols-sm-3 g-4">
           <div class="col">
             <div class="card h-100">
               <img src="img/curie.jpg" class="card-img-top" alt="...">
@@ -115,7 +121,7 @@
             <div class="card h-100">
               <img src="img/ohsumi.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Yoshinori Ohsumi <small>(大隅 良典)</small></h5>
+                <h5 class="card-title">Yoshinori Ohsumi <small>(<span lang="ja">大隅 良典</span>)</small></h5>
                 <h6 class="card-subtitle mb-2 text-muted">Nobel de Medicina (2016)</h6>
                 <p class="card-text">Premiado por suas descobertas de mecanismos de autofagia.</p>
                 <a href="https://www.nobelprize.org/prizes/medicine/2016/ohsumi/facts/" target="_blank" ="card-link">Leia mais (em inglês)</a>
@@ -127,12 +133,12 @@
 
       <!-- Seção Turing -->
       <section class="container-fluid" id="turing">
-        <div class="row">
-          <div class="col -lg-6 col-md-12">
+        <div class="row row-cols-12">
+          <div class="col">
             <h1 class="fw-bold">Premiados Turing</h1>
           </div>
         </div>
-        <div class="row row-cols-md-3 g-4">
+        <div class="row row-cols-1 row-cols-sm-3 g-4">
           <div class="col">
             <div class="card h-100">
               <img src="img/hellman.jpg" class="card-img-top" alt="...">
@@ -168,11 +174,50 @@
           </div>
         </div>        
       </section>
+
+      <!-- Seção Desenvolvedores -->
+      <section class="container-fluid" id="developers">
+        <div class="row">
+          <h1 class="fw-bold">Equipe de Desenvolvedores</h1>
+        </div>
+          <div class="row">
+          <div class="card-group">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Daniel Freitas</h5>
+                <p class="card-text">Graduando em Ciência da Computação - ICEI PUC Minas.</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/DaniiFreitaS" target="_blank"><span class="badge rounded-pill bg-dark">Github</span></a>
+                <a href="https://scratch.mit.edu/users/DaniiFreitaS/" target="_blank"><span class="badge rounded-pill bg-warning">Scratch</small></a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">João Pedro Torres</h5>
+                <p class="card-text">Graduando em Ciência da Computação - ICEI PUC Minas.</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/joao-pedro-torres" target="_blank"><span class="badge rounded-pill bg-dark">Github</span></a>
+                <a href="https://scratch.mit.edu/users/jpTorres_13/" target="_blank"><span class="badge rounded-pill bg-warning">Scratch</small></a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Pedro Amorim Sá</h5>
+                <p class="card-text">Graduando em Ciência da Computação - ICEI PUC Minas.</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/pedro-as" target="_blank"><span class="badge rounded-pill bg-dark">Github</span></a>
+                <a href="https://scratch.mit.edu/users/pedrohasa/" target="_blank"><span class="badge rounded-pill bg-warning">Scratch</small></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer bg-dark">
-      <a href="https://scratch.mit.edu/studios/29695214/" target="_blank" class="footer-brand">
-        Electric Kombi Studio
-      </a>
+      <span class="footer-brand">Electric Kombi Studio</span>
       <span class="footer-text"> | ICEI PUC Minas</span>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
