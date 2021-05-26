@@ -34,13 +34,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-md-0">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#nobel">Prêmio Nobel</a>
+                  <a class="nav-link" aria-current="page" href="#demo-jogo">Demo</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#turing">Prêmio Turing</a>
+                  <a class="nav-link" aria-current="page" href="#doc-jogo">Documentação</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Fale Conosco</a>
+                  <a class="nav-link" aria-current="page" href="#nobel">Premiados Nobel</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#turing">Premiados Turing</a>
                 </li>
               </ul>
             </div>
@@ -49,19 +52,32 @@
       </div>
     </header>
     <main class="container main">
-      <section class="container-fluid principal">
-        <div class="row">
-          <div class="col-12">
-            <h1>Conteúdo</h1>
+      <section class="game-frame">
+        <div class="container-fluid py-1 jumbotron" id="jogo">
+          <h1 class="display-5 fw-bold"">Jogo</h1>
+          <div class="fluid-media">
+            <iframe class="embed-responsive-item" src="https://scratch.mit.edu/projects/530713231/embed" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
           </div>
-          <div class="col-12">
-            <div class="container-fluid py-5">
-              <h1 class="display-5 fw-bold">Custom jumbotron</h1>
-              <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
-              <button class="btn btn-primary btn-lg" type="button">Example button</button>
-            </div>
-            </div>
+          <p class="col-md-12 fs-3">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle.</p>
+          <button class="btn btn-danger btn-lg" type="button">Ver no YouTube</button>
+        </div>
+      </section>
+      <section class="demo-videos">
+        <div class="container-fluid py-1 jumbotron" id="demo-jogo">
+          <h1 class="display-5 fw-bold"">Demonstração do Jogo</h1>
+          <div class="fluid-media">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_tlUajUvnvg" frameborder="0" allowfullscreen></iframe>
           </div>
+          <p class="col-md-12 fs-3">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle.</p>
+          <button class="btn btn-danger btn-lg" type="button">Ver no YouTube</button>
+        </div>
+        <div class="container-fluid py-1 jumbotron" id="doc-jogo">
+          <h1 class="display-5 fw-bold"">Documentação do Jogo</h1>
+          <div class="fluid-media">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/K0mYoGmsRrM" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <p class="col-md-12 fs-3">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle.</p>
+          <button class="btn btn-danger btn-lg" type="button">Ver no YouTube</button>
         </div>
       </section>
 
@@ -69,7 +85,7 @@
       <section class="container-fluid" id="nobel">
         <div class="row">
           <div class="col -lg-6 col-md-12">
-            <h1>Premiados Nobel</h1>
+            <h1 class="fw-bold">Premiados Nobel</h1>
           </div>
         </div>
         <div class="row row-cols-md-3 g-4">
@@ -113,7 +129,7 @@
       <section class="container-fluid" id="turing">
         <div class="row">
           <div class="col -lg-6 col-md-12">
-            <h1>Premiados Turing</h1>
+            <h1 class="fw-bold">Premiados Turing</h1>
           </div>
         </div>
         <div class="row row-cols-md-3 g-4">
