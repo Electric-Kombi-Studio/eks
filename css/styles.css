@@ -5,7 +5,7 @@ body
 
 body h1
 {
-  margin-top: 50px;
+  margin-top: 0px;
 }
 
 main section
@@ -54,9 +54,30 @@ main section
   color: rgb(255, 109, 41) !important;
 }
 
+.jumbotron h1
+{
+  padding-top: 20px;
+}
+
 .jumbotron p
 {
-  margin-top: 20px;
+  margin-top: 30px;
+}
+
+#about-jt
+{
+  color: white;
+  background-color: #212529;
+  margin-top: 150px;
+  padding: 40px;
+  border: #ffb28f solid 2px;
+  border-radius: 10px;
+}
+
+#about-jt a
+{
+  color: #ff7332;
+  
 }
 
 .fluid-media
@@ -75,6 +96,11 @@ main section
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+#developers .card-h-100
+{
+  max-width: 300px;
 }
 
 /* rodapé */
